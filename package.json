@@ -1,0 +1,10 @@
+{
+  "name": "javaScript-drumkit",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+} 
