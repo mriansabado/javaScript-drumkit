@@ -95,4 +95,57 @@ body::before {
     position: relative;
     z-index: 1;
 }
+
+/* Add these media queries at the end of your CSS file */
+@media screen and (max-width: 768px) {
+  .keys {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .key {
+    margin: 5px;
+    min-width: unset;
+    width: auto;
+    padding: 15px 10px;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+
+  kbd {
+    font-size: 1.5rem;
+  }
+
+  .sound {
+    font-size: 0.8rem;
+  }
+}
+
+/* For even smaller screens */
+@media screen and (max-width: 480px) {
+  .keys {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .key {
+    margin: 3px;
+    padding: 10px 8px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  kbd {
+    font-size: 1.2rem;
+  }
+}
   
